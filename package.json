@@ -1,0 +1,44 @@
+{
+  "name": "easy-messenger",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MIchaelJier/easy-messenger.git"
+  },
+  "author": "MichaelJier <chem908430737@icloud.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MIchaelJier/easy-messenger/issues"
+  },
+  "homepage": "https://github.com/MIchaelJier/easy-messenger#readme",
+  "scripts": {  
+    "lerna:bs": "lerna bootstrap",
+    "lerna:clean": "lerna clean",
+    "lerna:pub":"lerna publish",  
+    "lerna:list":"lerna list", 
+    "base:rollup": "lerna run --scope @easy-messenger/base-connection rollup",  
+    "client:rollup": "lerna run --scope @easy-messenger/client-connection rollup",  
+    "server:rollup": "lerna run --scope @easy-messenger/server-connection rollup",
+    "all:rollup": "yarn base:rollup && npm-run-all --parallel \"client:rollup\" \"server:rollup\""    
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1",
+    "npm-run-all": "^4.1.5",
+    "@typescript-eslint/parser": "^4.5.0", 
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2", 
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-typescript": "^0.14.0",
+    "prettier": "^2.1.2",
+    "typescript": "^4.1.3"
+  }, 
+  "workspaces": [
+    "packages/*"
+  ]
+}

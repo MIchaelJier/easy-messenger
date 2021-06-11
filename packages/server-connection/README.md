@@ -46,7 +46,7 @@ connection.request('some-data')
     console.log(payload)
   })
 // close connection
-connection.close();
+connection.close(); 
 ```
 ```js
 //frame.html

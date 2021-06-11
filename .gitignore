@@ -1,0 +1,13 @@
+logs
+*.log
+npm-debug.log*
+.eslintcache
+dist
+node_modules
+.DS_Store
+Thumbs.db
+.idea
+*.iml
+.vscode
+*.sublime-project
+*.sublime-workspace

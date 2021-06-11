@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="" /> 
+    <style>
+      iframe {
+        border-width: 0;
+      }
+    </style>
+  <script src="../packages/server-connection/dist/serverConnection.min.js"></script> 
+    <script> 
+    setTimeout(() =>{ 
+      console.log(serverConnection)  
+      const { ServerConnection } = serverConnection 
+      const frame = document.getElementById('iframe');
+      console.log(frame)
+      const connection = new ServerConnection(frame, {
+        debug: true
+      });
+      document.getElementById('send').addEventListener('click', (e) => {
+        connection.emit('test', {hello: 'world'});
+			})
+    } , 100)
+    </script> 
+    <title>Test</title>
+  </head> 
+  <body>
+    <div id="content">
+      <button id="send">send to son</button>
+      <iframe 
+        src="http://127.0.0.1:5500/tests/frame.html"  
+        width="100%"
+        height="100%"
+        id="iframe"
+        style="margin-top: 20px;" 
+      /> 
+    </div> 
+  </body> 
+</html>

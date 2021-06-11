@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="" />
+    <script src="../packages/client-connection/dist/clientConnection.min.js"></script> 
+    <script> 
+      console.log(clientConnection)
+      const {ClientConnection} = clientConnection 
+      const connection = new ClientConnection();
+      connection.on('test', (payload)=>{
+        console.log(payload)
+      }); 
+    </script>
+    <title>Test</title>
+  </head> 
+  <body> 
+    <div id="content">  
+      son
+    </div>
+  </body>
+</html>

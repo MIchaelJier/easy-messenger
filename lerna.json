@@ -4,9 +4,12 @@
   "useWorkspaces": true,
   "command": {
     "publish": {
-      "ignoreChanges": ["ignored-file", "*.md"]
+      "ignoreChanges": [
+        "ignored-file",
+        "*.md"
+      ]
     }
-  }, 
+  },
   "packages": [
     "packages/*"
   ]

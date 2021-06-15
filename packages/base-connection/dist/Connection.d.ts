@@ -1,0 +1,31 @@
+import { ConnectionOptions, RequestOptions, ConnectionSettings, Message, Promises } from './types';
+export declare class Connection {
+    connected: boolean;
+    id: string | null;
+    protected port: MessagePort;
+    private backlog;
+    protected promises: Promises;
+    private emitters;
+    protected options: ConnectionSettings;
+    protected connectionTimeout: number;
+    protected connectionStep: string;
+    protected messageListener: any;
+    protected readonly defaultOptions: ConnectionSettings;
+    constructor(options?: ConnectionOptions);
+    emit(event: string, payload?: any): Connection;
+    on(event: string, callback: Function): Connection;
+    request<T = any>(event: string, payload?: any, options?: RequestOptions): Promise<T>;
+    close(): void;
+    protected setConnectionTimeout(): void;
+    protected uuidv4(): string;
+    protected clearConnectionTimeout(): void;
+    protected initPortEvents(): void;
+    protected finishInit(): void;
+    protected completeBacklog(): void;
+    protected handleError(error: any): void;
+    protected handleMessage(message: Message): void;
+    protected getRequestTimeout(timeout: number | boolean | undefined): number | boolean;
+    protected isClient(): boolean;
+    protected message(message: Message): void;
+    private portMessage;
+}

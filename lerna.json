@@ -4,8 +4,7 @@
   "useWorkspaces": true,
   "command": {
     "publish": {
-      "ignoreChanges": [
-        "ignored-file",
+      "ignoreChanges": [ 
         "*.md"
       ]
     }

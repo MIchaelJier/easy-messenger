@@ -7,9 +7,6 @@
   "license": "ISC",
   "main": "dist/serverConnection.ems.js",
   "types": "dist/serverConnection.d.ts",
-  "files": [
-    "lib"
-  ],
   "publishConfig": {
     "access": "public"
   },

@@ -7,10 +7,7 @@
   "license": "ISC",
   "main": "dist/baseConnection.ems.js",
   "types": "dist/baseConnection.d.ts",
-  "files": [
-    "lib"
-  ],
-  "publishConfig": {
+  "publishConfig": { 
     "access": "public"
   },
   "repository": {

@@ -1,11 +1,12 @@
 logs
 *.log
 npm-debug.log*
-.eslintcache 
+.eslintcache
+dist 
 node_modules
-.DS_Store 
+.DS_Store
 Thumbs.db
-.idea
+.idea 
 *.iml
 .vscode
 *.sublime-project

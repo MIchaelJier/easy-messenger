@@ -20,8 +20,11 @@
       const connection = new ServerConnection(frame, {
         debug: true
       });
+      connection.on('test2', (payload)=>{
+        console.log(payload)  
+      }); 
       document.getElementById('send').addEventListener('click', (e) => {
-        connection.emit('test', {hello: 'world'});
+        connection.emit('test', {tips: "I'm your dad"});
 			})
     } , 100)
     </script> 

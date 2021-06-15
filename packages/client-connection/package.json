@@ -5,8 +5,8 @@
   "author": "MichaelJier <chem908430737@icloud.com>",
   "homepage": "https://github.com/MIchaelJier/easy-messenger/tree/master/packages/clientConnection#readme",
   "license": "ISC",
-  "main": "lib/clientConnection.ems.js",
-  "types": "lib/clientConnection.d.ts",
+  "main": "dist/clientConnection.ems.js",
+  "types": "dist/clientConnection.d.ts", 
   "files": [
     "lib"
   ],

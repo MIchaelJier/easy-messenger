@@ -1,12 +1,12 @@
 {
   "name": "@easy-messenger/client-connection",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "> TODO: description",
   "author": "MichaelJier <chem908430737@icloud.com>",
   "homepage": "https://github.com/MIchaelJier/easy-messenger/tree/master/packages/clientConnection#readme",
   "license": "ISC",
   "main": "dist/clientConnection.ems.js",
-  "types": "dist/clientConnection.d.ts", 
+  "types": "dist/clientConnection.d.ts",
   "files": [
     "lib"
   ],

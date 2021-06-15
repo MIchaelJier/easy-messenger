@@ -1,13 +1,13 @@
 {
   "name": "@easy-messenger/base-connection",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "> TODO: description",
   "author": "MichaelJier <chem908430737@icloud.com >",
   "homepage": "https://github.com/MIchaelJier/easy-messenger/tree/master/packages/base-connection#readme",
   "license": "ISC",
   "main": "dist/baseConnection.ems.js",
   "types": "dist/baseConnection.d.ts",
-  "publishConfig": { 
+  "publishConfig": {
     "access": "public"
   },
   "repository": {

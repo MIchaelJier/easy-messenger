@@ -1,12 +1,12 @@
 {
   "name": "@easy-messenger/client-connection",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "> TODO: description",
   "author": "MichaelJier <chem908430737@icloud.com>",
   "homepage": "https://github.com/MIchaelJier/easy-messenger/tree/master/packages/clientConnection#readme",
   "license": "ISC",
   "main": "dist/clientConnection.esm.js",
-  "types": "dist/clientConnection.d.ts", 
+  "types": "dist/clientConnection.d.ts",
   "publishConfig": {
     "access": "public"
   },
@@ -21,7 +21,7 @@
     "rollup": "rollup --config"
   },
   "dependencies": {
-    "@easy-messenger/base-connection": "^1.0.2",
+    "@easy-messenger/base-connection": "^1.0.3",
     "url-polyfill": "^1.1.12"
   },
   "devDependencies": {
